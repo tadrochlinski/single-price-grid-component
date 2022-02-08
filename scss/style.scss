@@ -152,3 +152,44 @@ footer{
     font-size: 11px; 
     color: hsl(228, 45%, 44%); 
 }
+
+@media only screen and (min-width: 920px){
+
+    *{
+        font-size: 16px;
+    }
+
+    .c-price{
+        width: 660px;
+        height: 440px;
+        grid-auto-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+
+        &__description{
+            grid-column: 1 / 3;
+            padding: 25px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &__subtitle{
+            &--yellow{
+                transform: translateY(10px);
+            }
+        }
+
+        &__paragraph{
+
+        }
+
+        &__subscription{
+            padding: 25px;
+            grid-column: 1 / 2;
+        }
+
+        &__ofert{
+            padding: 25px;
+            grid-column: 2 / 3;
+        }
+    }
+}
